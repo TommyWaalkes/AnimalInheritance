@@ -25,7 +25,7 @@ namespace Animal_Inheritance
             return "Grass or meat or something";
         }
 
-        public void PrintFood()
+        public virtual void PrintFood()
         {
             Console.WriteLine(name + " the animal eats " + GetFood());
         }

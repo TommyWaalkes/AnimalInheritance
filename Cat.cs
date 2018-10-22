@@ -6,21 +6,22 @@ using System.Threading.Tasks;
 
 namespace Animal_Inheritance
 {
-    public class Dog : Animal
+    class Cat : Animal
     {
-        public Dog(string name) : base(name)
+        bool cleanLitterBox;
+        public Cat(bool cleanLitterBox, string name) : base(name)
         {
-            
+            this.cleanLitterBox = cleanLitterBox;
         }
 
         public override string GetFood()
         {
-            return "Dog treats and kibble";
+            return "Mice, Kibble, and lint";
         }
 
         public override void PrintFood()
         {
-            Console.WriteLine($"The Dog {name} eats {GetFood()}");
+            Console.WriteLine($"{name} the cat eats {GetFood()}, but also likes hunting");
         }
     }
 }
